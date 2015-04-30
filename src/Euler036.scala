@@ -4,11 +4,9 @@
 object Euler036 {
   val max = 1e6.toInt
 
-  def main(args: Array[String]): Unit = {
-    println(getAnswer() + 1)
-  }
+  def main(args: Array[String]): Unit = println(getAnswer + 1)
 
-  def getAnswer(): Int = {
+  def getAnswer: Int = {
     var temp = 0
     var cur = 0
     var i = 1

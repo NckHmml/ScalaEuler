@@ -7,7 +7,7 @@ object Euler026 {
   val digits = 3
 
   def main(args: Array[String]): Unit = {
-    def getAnswer(): Int = {
+    def getAnswer: Int = {
       for (i <- 999 to 0 by -2) {
         if (isPrime(i)) {
           var start = BigInt(10).pow(i - 1)
@@ -20,7 +20,7 @@ object Euler026 {
       return 0
     }
 
-    println(getAnswer())
+    println(getAnswer)
   }
 
   def checkString(s: String): Boolean = {

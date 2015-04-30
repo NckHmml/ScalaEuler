@@ -4,7 +4,7 @@
 object Euler009 {
   def main(args: Array[String]): Unit = {
 
-    def getAnswer(): String = {
+    def getAnswer: String = {
       for (b <- 0 to 1000 by 4) {
         for (a <- 0 to 1000 by 3) {
           val c = 1000 - (a + b)
@@ -15,6 +15,6 @@ object Euler009 {
       return ""
     }
 
-    println(getAnswer())
+    println(getAnswer)
   }
 }
