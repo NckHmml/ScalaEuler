@@ -5,8 +5,8 @@ object Euler004 {
   def main(args: Array[String]): Unit = {
     var max = 0
 
-    for(x <- 1 until 1000)
-      for(y <- 1 until 1000)
+    for (x <- 100 until 1000)
+      for (y <- 100 until 1000)
         if (x * y > max && isPalindrome(x * y))
           max = x * y
 

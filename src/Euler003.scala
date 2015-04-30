@@ -7,7 +7,7 @@ object Euler003 {
     val a = 600851475143L
     val boundery = math.floor(math.sqrt(a)).toInt
 
-    for(b <- 1 until boundery) {
+    for (b <- 1 until boundery) {
       if (getGDC(a, b) == b && isPrime(b))
         max = b
     }
@@ -19,7 +19,7 @@ object Euler003 {
     var a = A
     var b = B
 
-    while(a != 0 && b != 0) {
+    while (a != 0 && b != 0) {
       if (a > b)
         a %= b
       else
@@ -38,7 +38,7 @@ object Euler003 {
     if (n == 1) return false
     if (n == 2) return true
 
-    for(i <- 2 until boundery)
+    for (i <- 2 until boundery)
       if (n % i == 0) return false
 
     return true

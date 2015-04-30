@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.And
-
 /**
  * Created by Nick on 29-4-2015.
  */
@@ -9,8 +7,7 @@ object Euler002 {
     var sum = 0
     var curFib = 0
 
-    do
-    {
+    do {
       i += 1
       curFib = fibBinet(i)
 
