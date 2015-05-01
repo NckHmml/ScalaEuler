@@ -8,28 +8,11 @@ object Euler003 {
     val boundery = math.floor(math.sqrt(a)).toInt
 
     for (b <- 1 until boundery) {
-      if (getGDC(a, b) == b && isPrime(b))
+      if (a % b == 0 && isPrime(b))
         max = b
     }
 
     println(max);
-  }
-
-  def getGDC(A: Long, B: Long): Long = {
-    var a = A
-    var b = B
-
-    while (a != 0 && b != 0) {
-      if (a > b)
-        a %= b
-      else
-        b %= a
-    }
-
-    if (a == 0)
-      return b
-    else
-      return a
   }
 
   def isPrime(n: Long): Boolean = {
