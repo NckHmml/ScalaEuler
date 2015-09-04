@@ -4,15 +4,15 @@
 object Euler009 {
   def main(args: Array[String]): Unit = {
 
-    def getAnswer: String = {
+    def getAnswer: Int = {
       for (b <- 0 to 1000 by 4) {
         for (a <- 0 to 1000 by 3) {
           val c = 1000 - (a + b)
           if (a * a + b * b == c * c)
-            return (a * b * c).toString()
+            return a * b * c
         }
       }
-      return ""
+      0
     }
 
     println(getAnswer)

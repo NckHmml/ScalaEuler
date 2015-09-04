@@ -39,10 +39,8 @@ object Euler014 {
       }
     }
 
-    return maxStart
+    maxStart
   }
 
-  def isEven(n: Long): Boolean = {
-    return (n & 1) == 0
-  }
+  def isEven(n: Long): Boolean = (n & 1) == 0
 }

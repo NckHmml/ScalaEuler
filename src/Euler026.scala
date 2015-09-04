@@ -17,7 +17,7 @@ object Euler026 {
             return i
         }
       }
-      return 0
+      0
     }
 
     println(getAnswer)
@@ -36,13 +36,13 @@ object Euler026 {
         }
       }
     }
-    return true
+    true
   }
 
   def isPrime(n: Long): Boolean = {
     val boundery = math.floor(math.sqrt(n)).toInt
     for (i <- 2 to boundery)
       if (n % i == 0) return false
-    return true
+    true
   }
 }

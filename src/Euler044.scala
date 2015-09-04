@@ -21,16 +21,14 @@ object Euler044 {
         }
       }
     }
-    return 0
+    0
   }
 
-  def penta(n: Int): Int = {
-    (n * (3 * n - 1)) / 2
-  }
+  def penta(n: Int): Int = (n * (3 * n - 1)) / 2
 
   def isPenta(n: Int): Boolean = {
     val mult = 24 * n + 1
     val root = math.floor(math.sqrt(mult)).toInt
-    return root * root == mult && root % 6 == 5
+    root * root == mult && root % 6 == 5
   }
 }

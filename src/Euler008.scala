@@ -10,7 +10,7 @@ object Euler008 {
       var result: Long = numbers(i) - 0x30
       for (x <- 1 to skip)
         result *= numbers(i - x) - 0x30
-      return result
+      result
     }
 
     val loop = (skip until numbers.length)

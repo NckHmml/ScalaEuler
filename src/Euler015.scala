@@ -6,7 +6,6 @@ object Euler015 {
     println(latticePath(20, 20))
   }
 
-  def latticePath(a: Int, b: Int): Long = {
+  def latticePath(a: Int, b: Int): Long =
     math.round(math.pow(10, (0 until a).map(i => math.log10(a + b - i) - math.log10(i + 1)).sum))
-  }
 }

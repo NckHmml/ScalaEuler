@@ -36,7 +36,7 @@ object Euler036 {
     }
 
     // It never reaches this though
-    return sum
+    sum
   }
 
   def isPalindrome(n: Long): Boolean = {
@@ -48,6 +48,6 @@ object Euler036 {
       num /= 10
       sum = sum * 10 + rem
     }
-    return n == sum
+    n == sum
   }
 }

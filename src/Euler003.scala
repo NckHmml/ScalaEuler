@@ -12,7 +12,7 @@ object Euler003 {
         max = b
     }
 
-    println(max);
+    println(max)
   }
 
   def isPrime(n: Long): Boolean = {
